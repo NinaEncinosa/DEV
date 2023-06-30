@@ -23,4 +23,6 @@ import { SharedModule } from '../shared/shared.module';
     TaskComponent
   ]
 })
-export class FeatureModule { }
+export class FeatureModule { 
+
+}

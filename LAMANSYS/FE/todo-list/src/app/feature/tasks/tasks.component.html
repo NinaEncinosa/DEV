@@ -1,5 +1,3 @@
 <ul>
-    <app-task></app-task>
-    <app-task></app-task>
-    <app-task></app-task>
+    <app-task *ngFor="let task of taskList">{{task}}</app-task>
 </ul>

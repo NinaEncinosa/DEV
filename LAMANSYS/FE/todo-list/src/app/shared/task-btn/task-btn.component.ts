@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./task-btn.component.scss']
 })
 export class TaskBtnComponent {
-
+  delete = {
+    url: "../assets/delete.svg",
+    alt: "delete"
+  }
 }

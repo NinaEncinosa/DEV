@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./core-content.component.scss']
 })
 export class CoreContentComponent {
+  tasks:string[] = [];
 
+  addTaskToList(newTask:string){
+    this.tasks.push(newTask);
+  }
 }
