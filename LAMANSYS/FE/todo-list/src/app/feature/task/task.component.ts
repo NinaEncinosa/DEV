@@ -7,6 +7,6 @@ import { TasksComponent } from '../tasks/tasks.component';
   styleUrls: ['./task.component.scss']
 })
 export class TaskComponent {
-  @Input() task:string = "";
+
   
 }

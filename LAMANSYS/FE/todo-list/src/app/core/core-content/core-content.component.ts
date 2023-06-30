@@ -9,6 +9,6 @@ export class CoreContentComponent {
   tasks:string[] = [];
 
   addTaskToList(newTask:string){
-    this.tasks.push(newTask);
+    this.tasks.unshift(newTask);
   }
 }
