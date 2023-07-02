@@ -6,9 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./core-content.component.scss']
 })
 export class CoreContentComponent {
-  tasks:string[] = [];
+
+  //Deberia crear una interfaz y hacer el arreglo Tasks de esa
+  // task = {
+  //   id:0,
+  //   title:'',
+  //   description:'',
+  //   isChecked:false
+  // };
+
+  tasks:any[] = [
+  ];
+
+  id:number = 0;
 
   addTaskToList(newTask:string){
-    this.tasks.unshift(newTask);
+    this.id++
+    this.tasks.unshift({title: newTask, id:this.id, isChecked:false});
   }
 }

@@ -1,7 +1,9 @@
-<li>
+<li *ngFor="let task of taskList">
     <div class="task-container">
       <input type="checkbox">
-      <span><ng-content></ng-content></span>
-      <app-task-btn></app-task-btn>
+      <span>
+        {{task.title}}
+      </span>
+      <app-task-btn (click)="deleteTask(task.id)"></app-task-btn>
     </div>
 </li>

@@ -1,5 +1,4 @@
-import { Component, Input } from '@angular/core';
-import { TasksComponent } from '../tasks/tasks.component';
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-task',
@@ -7,6 +6,11 @@ import { TasksComponent } from '../tasks/tasks.component';
   styleUrls: ['./task.component.scss']
 })
 export class TaskComponent {
-
+  @Input() taskList:any[]=[];
   
+  deleteTask(id:number){
+    let index = this.taskList.findIndex(e => e.id ==id);
+    this.taskList.splice(index,1);
+  }
+
 }
