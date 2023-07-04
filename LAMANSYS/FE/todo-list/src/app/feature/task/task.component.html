@@ -1,9 +1,8 @@
-<li *ngFor="let task of taskList">
-    <div class="task-container">
-      <input type="checkbox">
-      <span>
-        {{task.title}}
-      </span>
-      <app-task-btn (click)="deleteTask(task.id)"></app-task-btn>
-    </div>
-</li>
+<div class="task-container">
+  <input type="checkbox" 
+  (click)="emitChangeOnCheckTask()">
+  <span>
+    <ng-content></ng-content>
+  </span>
+  <app-task-btn (click)="emitDeleteTask()"></app-task-btn>
+</div>

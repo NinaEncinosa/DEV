@@ -7,5 +7,12 @@ import { Component, Input } from '@angular/core';
 })
 export class TasksComponent {
   @Input() taskList:any[]=[];
-  
+
+  deleteTask(id :number) {
+    this.taskList.splice(id,1);
+  }
+
+  toggleCheckedTask(id: number, value:boolean) {
+    this.taskList[id].isChecked = value;
+  }
 }

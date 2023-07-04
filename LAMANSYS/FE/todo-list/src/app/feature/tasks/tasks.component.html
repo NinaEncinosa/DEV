@@ -1,3 +1,10 @@
 <ul>
-    <app-task [taskList] = "taskList"></app-task>
+    <li *ngFor="let task of taskList; let i = index ">
+        <app-task 
+        [task] = "task"
+        (deletedTask) = "deleteTask(i)"
+        (checkedTask) = "toggleCheckedTask(i,$event)">
+       {{task.title}} isDone:{{task.isChecked}}
+        </app-task>
+    </li>
 </ul>
