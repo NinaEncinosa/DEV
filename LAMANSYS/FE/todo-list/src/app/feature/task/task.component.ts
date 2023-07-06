@@ -19,13 +19,9 @@ export class TaskComponent {
   }
   
   emitChangeOnCheckTask(){
-    let isChecked = this.task.isChecked;
-    if(isChecked == true){
-      isChecked = false;
-    }else{
-      isChecked = true;
-    }
-    this.checkedTask.emit(isChecked);
+    this.task.isChecked = !this.task.isChecked;
+    this.checkedTask.emit(this.task.isChecked);
   }
+
 
 }

@@ -1,0 +1,11 @@
+@import "../../../assets/styles/_input";
+
+.add-task{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    input{
+        flex-grow: 1;
+        margin-right: 1rem;
+    }
+}

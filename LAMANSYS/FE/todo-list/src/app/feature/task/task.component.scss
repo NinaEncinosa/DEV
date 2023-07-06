@@ -1,0 +1,23 @@
+@import "../../../assets/styles/_input";
+
+.task-container{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    input{
+        width: 3rem;
+        height: 3rem;
+        border: 2px solid;
+        margin-right: 1rem;
+        &:checked + span{
+            text-decoration: line-through;
+        }
+    }
+    span{
+        flex-grow: 1;
+    }
+    .buttons{
+        display: flex;
+        align-items: center;
+    }
+}

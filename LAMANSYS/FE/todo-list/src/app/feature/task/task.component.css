@@ -1,1 +1,26 @@
-/*# sourceMappingURL=task.component.css.map */
+input {
+  border: none;
+  background-color: transparent;
+}
+
+.task-container {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.task-container input {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid;
+  margin-right: 1rem;
+}
+.task-container input:checked + span {
+  text-decoration: line-through;
+}
+.task-container span {
+  flex-grow: 1;
+}
+.task-container .buttons {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=task.component.css.map */

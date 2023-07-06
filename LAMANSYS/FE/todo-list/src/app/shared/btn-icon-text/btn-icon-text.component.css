@@ -1,1 +1,10 @@
-/*# sourceMappingURL=btn-icon-text.component.css.map */
+button {
+  background-color: transparent;
+  height: 6rem;
+  padding: 1rem 2rem;
+  border-color: black;
+}
+
+.icon {
+  margin-right: 1rem;
+}/*# sourceMappingURL=btn-icon-text.component.css.map */
