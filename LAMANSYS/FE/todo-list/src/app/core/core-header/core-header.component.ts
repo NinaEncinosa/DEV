@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./core-header.component.scss']
 })
 export class CoreHeaderComponent {
+  fullScreen = "fullscreen";
 
 }

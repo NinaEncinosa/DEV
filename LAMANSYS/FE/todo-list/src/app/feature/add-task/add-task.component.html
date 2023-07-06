@@ -1,4 +1,4 @@
 <article class="add-task">
     <input #newTask type="text" placeholder="Describa una tarea">
-    <app-btn-text (click)="emitTask(newTask.value)">ADD</app-btn-text>
+    <app-btn-icon [type]="check" (click)="emitTask(newTask.value)"></app-btn-icon>
 </article>
