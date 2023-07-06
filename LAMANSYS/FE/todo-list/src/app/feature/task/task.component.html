@@ -1,8 +1,8 @@
-<div class="task-container">
+<article class="task-container">
   <input type="checkbox" 
   (click)="emitChangeOnCheckTask()">
   <span>
     <ng-content></ng-content>
   </span>
-  <app-task-btn (click)="emitDeleteTask()"></app-task-btn>
-</div>
+  <app-btn-icon [type]="delete" (click)="emitDeleteTask()"></app-btn-icon>
+</article>

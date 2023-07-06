@@ -9,7 +9,7 @@ export class TaskComponent {
   @Input() task:any;
   @Output() deletedTask = new EventEmitter<any>();
   @Output() checkedTask = new EventEmitter<boolean>();
-  
+  delete = 'delete';
 
   emitDeleteTask(){
     this.deletedTask.emit();

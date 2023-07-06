@@ -1,18 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TaskBtnComponent } from './task-btn/task-btn.component';
-
-
+import { BtnIconComponent } from './btn-icon/btn-icon.component';
+import { BtnTextComponent } from './btn-text/btn-text.component';
+import { BtnIconTextComponent } from './btn-icon-text/btn-icon-text.component';
 
 @NgModule({
   declarations: [
-    TaskBtnComponent
+    BtnIconComponent,
+    BtnTextComponent,
+    BtnIconTextComponent,
   ],
   imports: [
     CommonModule
   ],
   exports:[
-    TaskBtnComponent
+    BtnIconComponent,
+    BtnTextComponent,
+    BtnIconTextComponent,
   ]
 })
 export class SharedModule { }
