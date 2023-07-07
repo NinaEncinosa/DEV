@@ -1,5 +1,11 @@
 li{
-    list-style-type: none;
+    list-style: none;
+    margin-bottom: 1rem;
+}
 
-
+ul{
+    padding-inline-start: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

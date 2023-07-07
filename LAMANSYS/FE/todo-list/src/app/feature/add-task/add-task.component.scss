@@ -1,11 +1,19 @@
 @import "../../../assets/styles/_input";
 
-.add-task{
+article{
+    background-color: lightpink;
     display: flex;
     align-items: center;
-    padding: 1rem;
+    backdrop-filter: blur(5.5rem);
+    max-width: 64rem;
+    margin-bottom: 1rem;
     input{
+        border-style: dashed;
         flex-grow: 1;
-        margin-right: 1rem;
+        margin: 1rem;
+        
+    }
+    .btn{
+        margin: 1rem 1rem 1rem 0;
     }
 }

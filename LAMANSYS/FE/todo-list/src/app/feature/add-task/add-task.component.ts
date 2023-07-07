@@ -10,6 +10,9 @@ export class AddTaskComponent {
   check = "check";
 
   emitTask(newTask: string){
-    this.task.emit(newTask);
+    if(newTask != ""){
+      this.task.emit(newTask);
+    }
+
   }
 }

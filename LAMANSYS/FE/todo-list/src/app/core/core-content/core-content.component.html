@@ -1,10 +1,10 @@
 <main>
-    <section>
+    <section class="add-task">
         <app-add-task (task)="addTaskToList($event)">
         </app-add-task>
     </section>
     <hr>
-    <section>
+    <section class="list-of-tasks">
         <app-tasks [taskList]="tasks">
         </app-tasks>
     </section>

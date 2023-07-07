@@ -4,8 +4,8 @@
     <ng-content></ng-content>
   </span>
   <div class="buttons">
-    <app-btn-icon [type]="copy"></app-btn-icon>
-    <app-btn-icon [type]="share"></app-btn-icon>
-    <app-btn-icon [type]="delete" (click)="emitDeleteTask()"></app-btn-icon>
+    <app-btn-icon class="btn" [type]="copy"></app-btn-icon>
+    <app-btn-icon class="btn" [type]="share"></app-btn-icon>
+    <app-btn-icon class="btn" [type]="delete" (click)="emitDeleteTask()"></app-btn-icon>
   </div>
 </article>
