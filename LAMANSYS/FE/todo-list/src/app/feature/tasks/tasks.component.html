@@ -1,14 +1,5 @@
 <ul>
-    <li>
-        <app-task>MOCKUP Task N</app-task>
-    </li>
-    <li>
-        <app-task>MOCKUP Task N</app-task>
-    </li>
-    <li>
-        <app-task>MOCKUP Task N</app-task>
-    </li>
-    <li *ngFor="let task of taskList; let i = index ">
+    <li class="task" *ngFor="let task of taskList; let i = index ">
         <app-task 
         [task] = "task"
         (deletedTask) = "deleteTask(i)"

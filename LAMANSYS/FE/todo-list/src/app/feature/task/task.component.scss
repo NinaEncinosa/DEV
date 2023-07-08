@@ -1,7 +1,6 @@
-@import "../../../assets/styles/_input";
+@import "../../../styles/base.scss";
 
 .task-container{
-    background-color: lightgray;
     display: flex;
     align-items: center;
     input{

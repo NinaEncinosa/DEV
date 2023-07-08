@@ -1,0 +1,38 @@
+@import '_colorScheme';
+
+:root {
+    font-size: 8px;
+}
+
+* {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 3rem; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    scrollbar-width: thin;
+}
+
+hr {
+    margin-bottom: 1rem;
+    max-width: 64rem;
+}
+
+input{
+    border: none;
+    background-color: transparent;
+}
+
+button{
+    border: 1px solid $Negro;
+    background-color: transparent;
+    height: 6rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+
+
+
+
