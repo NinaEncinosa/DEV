@@ -1,0 +1,13 @@
+<article class="task-container">
+  <div class="check-and-task"> 
+    <input class="checkbox" type="checkbox" (click)="emitChangeOnCheckTask()">
+    <span class="text">
+      <ng-content></ng-content>
+    </span>
+  </div>
+  <div class="btns">
+    <app-btn-icon [type]="copy"></app-btn-icon>
+    <app-btn-icon [type]="share"></app-btn-icon>
+    <app-btn-icon [type]="delete" (click)="emitDeleteTask()"></app-btn-icon>
+  </div>
+</article>

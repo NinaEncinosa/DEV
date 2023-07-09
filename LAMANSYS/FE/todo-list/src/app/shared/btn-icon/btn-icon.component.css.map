@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../../assets/styles/_buttons.scss","btn-icon.component.css","btn-icon.component.scss"],"names":[],"mappings":"AACA;EAEI,6BAAA;EACA,YAAA;EACA,kBAAA;EAEA,eAAA;ACFJ;;ACJA;EACI,qBAAA;EACA,WAAA;EACA,aAAA;EACA,eAAA;ADOJ","file":"btn-icon.component.css"}
+{"version":3,"sources":["btn-icon.component.scss","btn-icon.component.css"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,eAAA;EACA,iBAAA;ACCJ","file":"btn-icon.component.css"}

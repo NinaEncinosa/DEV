@@ -1,0 +1,31 @@
+.task-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0.5rem;
+}
+.task-container .check-and-task {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  flex-direction: row;
+  flex-basis: 100%;
+}
+.task-container .check-and-task .checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.task-container .check-and-task .checkbox:checked + span {
+  text-decoration: line-through;
+}
+.task-container .btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0.25rem;
+}/*# sourceMappingURL=task-item.component.css.map */

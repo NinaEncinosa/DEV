@@ -1,17 +1,15 @@
-@import "../../../styles/base.scss";
-
-form{
-    display: flex;
-    align-items: center;
-    backdrop-filter: blur(5.5rem);
-    max-width: 64rem;
-    margin-bottom: 1rem;
+@import '../../../styles/mixins';
+.addTask{
+    @include flex(center, center, row);
+    padding: 0.5rem;
     input{
-        flex-grow: 1;
-        margin: 1rem;
+        flex-basis: 100%;
+        margin: 0.5rem;
         outline: none;
     }
-    .btn{
-        margin: 1rem 1rem 1rem 0;
-    }
 }
+
+
+
+
+

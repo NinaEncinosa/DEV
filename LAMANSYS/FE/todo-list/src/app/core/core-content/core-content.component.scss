@@ -1,7 +1,14 @@
-.list-of-tasks{
-    max-width: 64rem;
+@import "../../../styles/base";
+
+main{
+    @include flex(unset,center,column);
+    gap: 1rem;
 }
-.add-tasks{
-    max-width: 64rem;
+.add-task{
+    backdrop-filter: blur(15px) saturate(150%);
+    position: sticky;
+    top: 1rem;
+    z-index: 1;
 }
+
 

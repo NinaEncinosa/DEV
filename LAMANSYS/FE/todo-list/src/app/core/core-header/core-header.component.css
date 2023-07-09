@@ -1,14 +1,15 @@
 header {
   display: flex;
   align-items: center;
-  margin: 1rem;
-  max-width: 64rem;
+  justify-content: unset;
+  flex-direction: row;
+  padding: 0.5rem;
+  flex-basis: 100%;
+  gap: 1rem;
 }
 header h1 {
-  font-size: 4.5rem;
-  flex-grow: 1;
-  margin: 1rem;
-}
-header .button {
-  margin: 1rem 1rem 0 1rem;
+  font-size: unset;
+  flex-basis: 100%;
+  margin-left: 0 auto;
+  font-weight: unset;
 }/*# sourceMappingURL=core-header.component.css.map */

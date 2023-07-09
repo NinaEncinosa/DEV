@@ -1,8 +1,9 @@
-.wrapper{    
-    padding: 0% 30%;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    overflow-y: auto;
-}
+@import "../styles/base.scss";
 
+.wrapper{    
+    margin: 0 auto;
+    height: 100vh;
+    max-width: 32rem;
+    padding: 0 1.5rem;
+    box-sizing: unset; //so the padding doesn't take part of the max-width
+}

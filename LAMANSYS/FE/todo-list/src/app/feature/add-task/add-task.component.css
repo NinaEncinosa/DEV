@@ -1,22 +1,12 @@
-input {
-  border: none;
-  background-color: transparent;
-}
-
-article {
-  background-color: lightpink;
+.addTask {
   display: flex;
   align-items: center;
-  -webkit-backdrop-filter: blur(5.5rem);
-          backdrop-filter: blur(5.5rem);
-  max-width: 64rem;
-  margin-bottom: 1rem;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0.5rem;
 }
-article input {
-  border-style: dashed;
-  flex-grow: 1;
-  margin: 1rem;
-}
-article .btn {
-  margin: 1rem 1rem 1rem 0;
+.addTask input {
+  flex-basis: 100%;
+  margin: 0.5rem;
+  outline: none;
 }/*# sourceMappingURL=add-task.component.css.map */

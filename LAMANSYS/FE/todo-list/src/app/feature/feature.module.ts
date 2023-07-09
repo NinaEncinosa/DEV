@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AddTaskComponent } from './add-task/add-task.component';
-import { TasksComponent } from './tasks/tasks.component';
-import { TaskComponent } from './task/task.component';
+import { TaskListComponent } from './task-list/task-list.component';
+import { TaskItemComponent } from './task-item/task-item.component';
 import { SharedModule } from '../shared/shared.module';
 
 
@@ -10,8 +10,8 @@ import { SharedModule } from '../shared/shared.module';
 @NgModule({
   declarations: [
     AddTaskComponent,
-    TasksComponent,
-    TaskComponent
+    TaskListComponent,
+    TaskItemComponent
   ],
   imports: [
     CommonModule,
@@ -19,8 +19,8 @@ import { SharedModule } from '../shared/shared.module';
   ],
   exports:[
     AddTaskComponent,
-    TasksComponent,
-    TaskComponent
+    TaskListComponent,
+    TaskItemComponent
   ]
 })
 export class FeatureModule { 
