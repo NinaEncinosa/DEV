@@ -1,12 +1,17 @@
 @import '../../../styles/mixins';
 .addTask{
-    @include flex(center, center, row);
+    @include flex(center, space-between, row);
     padding: 0.5rem;
     input{
+        flex: 1;
         flex-basis: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         margin: 0.5rem;
         outline: none;
     }
+
 }
 
 

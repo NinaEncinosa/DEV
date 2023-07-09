@@ -1,25 +1,28 @@
 @import "../../../styles/mixins";
 
-.task-container{
-    @include flex(center, center, row);
-    padding: 0.5rem;
-    .check-and-task{
-        @include flex(center, unset, row);
-        flex-basis: 100%;
-        .checkbox{
-            width: 1.5rem;
-            height: 1.5rem;
-            border: 2px solid;
-            margin-left: 0.5rem;
-            margin-right: 0.5rem;
-            &:checked + span{
-                text-decoration: line-through;
-            }
-        }
+.task-container {
+  @include flex(center, center, row);
+  padding: 0.5rem;
+  input {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    &:checked + .task-text {
+      text-decoration: line-through;
     }
+  }
 
-    .btns{
-        @include flex(center, center, row);
-        gap: 0.25rem;
-    }
+  .task-text {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .btns {
+    @include flex(center, center, row);
+    gap: 0.25rem;
+  }
 }
