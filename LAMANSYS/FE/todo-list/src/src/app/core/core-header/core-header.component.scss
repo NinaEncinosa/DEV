@@ -1,0 +1,18 @@
+@import '../../../styles/_mixins.scss';
+header{
+    @include flex(center,unset,row);
+    padding: 0.5rem;
+    flex-basis: 100%;
+    gap: 1rem;
+    h1{
+        font-size: unset;
+        flex-basis: 100%;
+        margin-left: 0 auto;
+        font-weight: unset;
+    }
+}
+
+
+
+
+

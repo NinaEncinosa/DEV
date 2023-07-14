@@ -1,0 +1,11 @@
+<article class="task-container">
+  <input type="checkbox" (click)="toggleCheck(this.task.id)">
+  <div class="task-text">
+    <span><ng-content></ng-content></span>
+  </div> 
+  <div class="btns">
+    <app-btn-icon [type]="copy"></app-btn-icon>
+    <app-btn-icon [type]="share"></app-btn-icon>
+    <app-btn-icon [type]="delete" (click)="deleteTask(this.task.id)"></app-btn-icon>
+  </div>
+</article>

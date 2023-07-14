@@ -1,0 +1,12 @@
+.addTask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0.5rem;
+}
+.addTask input {
+  flex-basis: 100%;
+  margin: 0.5rem;
+  outline: none;
+}/*# sourceMappingURL=add-task.component.css.map */

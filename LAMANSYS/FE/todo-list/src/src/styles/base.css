@@ -1,0 +1,82 @@
+:root {
+  background-color: rgb(255, 255, 255);
+  color: rgb(34, 34, 34);
+}
+:root hr {
+  border: 2px solid rgba(34, 34, 34, 0.5);
+}
+:root input {
+  color: rgb(34, 34, 34);
+}
+:root button {
+  border: 1px solid rgb(34, 34, 34);
+  filter: invert(0);
+}
+:root .addTask {
+  background-color: rgba(34, 34, 34, 0.1);
+}
+:root .task {
+  background-color: rgba(34, 34, 34, 0.1);
+  color: rgb(34, 34, 34);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+  }
+  :root hr {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+  }
+  :root input {
+    color: rgb(255, 255, 255);
+  }
+  :root button {
+    filter: invert(1);
+  }
+  :root .addTask {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  :root .task {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255);
+  }
+}
+:root {
+  font-size: 16px;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  border: 1px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+header {
+  font-size: 2.25rem;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: unset;
+  background-color: transparent;
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+hr {
+  width: 100%;
+  height: 2px;
+}/*# sourceMappingURL=base.css.map */

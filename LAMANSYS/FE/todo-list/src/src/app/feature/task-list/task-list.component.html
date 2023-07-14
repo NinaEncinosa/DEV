@@ -1,0 +1,8 @@
+<ul>
+    <li class="task" *ngFor="let task of taskList">
+        <app-task-item
+        [task] = "task">
+        {{task.title}}
+        </app-task-item>
+    </li>
+</ul> 
