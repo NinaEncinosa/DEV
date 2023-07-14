@@ -1,18 +1,21 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit, inject } from '@angular/core';
+import { TaskItem } from 'src/app/model/task-item.model';
+import { TasksService } from 'src/app/services/tasks.service';
 
 @Component({
   selector: 'app-task-list',
   templateUrl: './task-list.component.html',
   styleUrls: ['./task-list.component.scss']
 })
-export class TaskListComponent {
-  @Input() taskList:any[]=[];
+export class TaskListComponent implements OnInit{   
+  taskList:TaskItem[] = [] ;
 
-  deleteTask(id :number) {
-    this.taskList.splice(id,1);
+  constructor(public tasksService: TasksService) {
+    this.taskList = this.tasksService.getTaskList();
   }
 
-  toggleCheckedTask(id: number, value:boolean) {
-    this.taskList[id].isChecked = value;
+  ngOnInit(): void {
+    this.tasksService.getTaskList();
   }
+
 }

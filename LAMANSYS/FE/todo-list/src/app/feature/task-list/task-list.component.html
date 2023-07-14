@@ -1,11 +1,8 @@
 <ul>
-    <li class="task" *ngFor="let task of taskList; let i = index ">
+    <li class="task" *ngFor="let task of taskList">
         <app-task-item
-        [task] = "task"
-        (deletedTask) = "deleteTask(i)"
-        (checkedTask) = "toggleCheckedTask(i,$event)">
+        [task] = "task">
         {{task.title}}
-       
         </app-task-item>
     </li>
 </ul> 

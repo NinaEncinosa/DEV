@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './core-header.component.html',
   styleUrls: ['./core-header.component.scss']
 })
-export class CoreHeaderComponent {
+export class CoreHeaderComponent{
+
   fullScreen = "fullscreen";
 
 }

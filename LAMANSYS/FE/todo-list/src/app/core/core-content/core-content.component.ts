@@ -6,10 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./core-content.component.scss']
 })
 export class CoreContentComponent {
-  tasks:any[] = [
-  ];
 
-  addTaskToList(newTask:string){
-    this.tasks.unshift({title: newTask, isChecked:false});
-  }
 }
