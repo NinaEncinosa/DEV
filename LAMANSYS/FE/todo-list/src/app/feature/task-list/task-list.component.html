@@ -1,5 +1,5 @@
 <ul>
-    <li class="task" *ngFor="let task of taskList">
+    <li class="task" *ngFor="let task of tasksService.getTaskList()">
         <app-task-item
         [task] = "task">
         {{task.title}}

@@ -19,12 +19,13 @@ export class TaskItemComponent implements OnInit {
     this.tasksService.getTaskList();
   }
 
-  deleteTask(index: number){
-    this.tasksService.deleteTask(index);
+  toggleCheck(){
+    this.task.isChecked = !this.task.isChecked;
+    this.tasksService.updateTask(this.task);
   }
 
-  toggleCheck(index: number){
-    this.tasksService.toggleCheck(index);
+  deleteTask(){
+    this.tasksService.deleteTask(this.task);
   }
 
 }

@@ -11,8 +11,4 @@ export class TaskItem {
         this.isChecked = this.isChecked;
     }
 
-    toggleCheck(){
-        this.isChecked = !this.isChecked;
-    }
-
 }

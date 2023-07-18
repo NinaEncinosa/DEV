@@ -8,10 +8,9 @@ import { TaskItem } from '../model/task-item.model';
 
 export class TasksService implements OnInit{
   taskList:taskList;
-  private items: TaskItem[] = [];
 
   constructor() { 
-    this.taskList = new taskList(this.items);
+    this.taskList = new taskList(new Array<TaskItem>());
   }
 
   ngOnInit(): void {
@@ -26,12 +25,12 @@ export class TasksService implements OnInit{
     this.taskList.addTask(title, description);
   }
 
-  deleteTask( index: number ){
-    this.taskList.deleteTask(index);
+  deleteTask( task: TaskItem ){
+    this.taskList.deleteTask(task);
   } 
 
-  toggleCheck( index: number){
-    this.taskList.toggleCheck(index);
+  updateTask( task : TaskItem ){
+    this.taskList.updateTask(task);
   }
 
 }

@@ -1,4 +1,4 @@
 <form class="addTask" (submit)="$event.preventDefault()">
     <input #newTask type="text" placeholder="Describa una tarea">
-    <app-btn-icon [type]="check" (click)="addTask(newTask.value,'')"></app-btn-icon>
+    <app-btn-icon [type]="check" (click)="addTask(newTask)"></app-btn-icon>
 </form>

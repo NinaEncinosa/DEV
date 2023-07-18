@@ -15,7 +15,10 @@ export class AddTaskComponent implements OnInit{
     this.tasksService.getTaskList();
   }
 
-  addTask(title: string, description: string){
-    this.tasksService.addTask(title, description);
+  addTask(newTask: HTMLInputElement){
+    if(newTask.value !== ""){
+      this.tasksService.addTask(newTask.value, "");
+      newTask.value = "";
+    }
   }
 }
