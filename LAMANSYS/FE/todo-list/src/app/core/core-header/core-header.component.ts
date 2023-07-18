@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FullscreenService } from 'src/app/services/fullscreen.service';
 
 @Component({
   selector: 'app-core-header',
@@ -6,7 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./core-header.component.scss']
 })
 export class CoreHeaderComponent{
+  btnType = "btn";
 
-  fullScreen = "fullscreen";
+  constructor(public fullscreenService : FullscreenService) {
+    this.btnType = "fullscreen";
+   }
+
+  toggleFullscreen(){
+    if(this.btnType === "fullscreen"){
+      this.btnType = "fullscreenExit";
+    }else{
+      this.btnType = "fullscreen";
+    }
+    this.fullscreenService.toggleFullscreen();
+  }
 
 }

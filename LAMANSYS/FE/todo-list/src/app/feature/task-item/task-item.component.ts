@@ -1,6 +1,8 @@
 import { Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import { TaskItem } from 'src/app/model/task-item.model';
 import { TasksService } from 'src/app/services/tasks.service';
+import { CopyTaskService } from 'src/app/services/copy-task.service';
+import { ShareTaskService } from 'src/app/services/share-task.service';
 
 @Component({
   selector: 'app-task-item',
@@ -13,7 +15,10 @@ export class TaskItemComponent implements OnInit {
   share = 'share';
   delete = 'delete';
   
-  constructor(public tasksService: TasksService) { }
+  constructor(
+    public tasksService: TasksService, 
+    public copyTaskService: CopyTaskService, 
+    public shareTaskService: ShareTaskService) { }
 
   ngOnInit(): void {
     this.tasksService.getTaskList();
@@ -28,4 +33,11 @@ export class TaskItemComponent implements OnInit {
     this.tasksService.deleteTask(this.task);
   }
 
+  shareTask(){
+    this.shareTaskService.shareTask(this.task);
+  }
+
+  copyTask(){
+    this.copyTaskService.copyTask(this.task);
+  }
 }
