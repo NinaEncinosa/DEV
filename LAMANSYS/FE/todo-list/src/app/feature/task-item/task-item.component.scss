@@ -9,9 +9,6 @@
     border: 2px solid;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    &:checked + .task-text {
-      text-decoration: line-through;
-    }
   }
 
   .task-text {
@@ -19,6 +16,10 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  .styleCheckTask{
+    text-decoration: line-through;
   }
 
   .btns {

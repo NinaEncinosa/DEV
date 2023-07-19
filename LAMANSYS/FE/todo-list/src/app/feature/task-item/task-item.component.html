@@ -1,6 +1,6 @@
 <article class="task-container">
-  <input type="checkbox" (click)="toggleCheck()">
-  <div class="task-text">
+  <input type="checkbox" (click)="toggleCheck()" [checked]=task.isChecked>
+  <div class="task-text" [class.styleCheckTask]=task.isChecked>
     <span><ng-content></ng-content></span>
   </div> 
   <div class="btns">
