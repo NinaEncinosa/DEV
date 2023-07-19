@@ -1,0 +1,64 @@
+$Negro: rgba(34, 34, 34, 1);
+$Negro50: rgba(34, 34, 34, 0.5);
+$Negro10: rgba(34, 34, 34, 0.1);
+
+$Blanco: rgba(255, 255, 255, 1);
+$Blanco50: rgba(255, 255, 255, 0.5);
+$Blanco20: rgba(255, 255, 255, 0.2);
+
+:root {
+    background-color: $Blanco;
+    color: $Negro;
+    
+    hr{
+        border: 2px solid $Negro50;
+    }
+
+    input{
+        color: $Negro;
+    }
+
+    button{
+        border: 1px solid $Negro;
+        filter: invert(0);
+    }
+
+    .addTask{
+        background-color: $Negro10;
+    }
+
+    .task{
+        background-color: $Negro10;
+        color: $Negro; 
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        background-color: $Negro;
+        color: $Blanco;
+        
+        hr{
+            border: 2px solid $Blanco20;
+        }
+
+        input{
+            color: $Blanco;
+        }
+
+        button{
+            filter: invert(1);
+        }
+
+        .addTask{
+            background-color: $Blanco50;
+        }
+
+        .task{
+            background-color: $Blanco50;
+            color: $Blanco; 
+        }
+    }
+}
+
