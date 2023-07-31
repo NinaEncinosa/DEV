@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+import { ViewsModule } from './views/views.module';
 import { AppComponent } from './app.component';
-import { CoreModule } from './core/core.module';
 import { TasksService } from './services/tasks.service';
 
 
@@ -14,7 +14,7 @@ import { TasksService } from './services/tasks.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CoreModule
+    ViewsModule
   ],
   providers: [TasksService],
   bootstrap: [AppComponent]

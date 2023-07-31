@@ -26,6 +26,11 @@ export class TasksService implements OnInit{
     return this.taskList.tasks;
   }
 
+  getTask(id: string | null){
+    let index = this.taskList.findIndexOfTaskByTaskId(Number(id));
+    return this.taskList.tasks[index];
+  }
+
   addTask( title: string, description: string){
     this.taskList.addTask(title, description);
     this.saveInStorage();

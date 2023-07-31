@@ -1,0 +1,12 @@
+<article>
+  <header class="task">
+    <h1>{{task.title}}</h1>
+    <app-btn-text routerLink="edit" (click)="editTask()">edit</app-btn-text>
+  </header>
+  <hr>
+  <section class="task"> 
+    <p>Task id: {{task.id}}</p>
+    <p>Task description: {{task.description}}</p>
+    <p>Is the task done?: {{task.isChecked}}</p>
+  </section>
+</article>
