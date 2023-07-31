@@ -4,6 +4,7 @@ import { CoreHeaderComponent } from './core-header/core-header.component';
 import { CoreContentComponent } from './core-content/core-content.component';
 import { FeatureModule } from '../feature/feature.module';
 import { SharedModule } from '../shared/shared.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -15,7 +16,8 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     FeatureModule,
-    SharedModule
+    SharedModule,
+    RouterModule
   ],
   exports: [
     CoreHeaderComponent,

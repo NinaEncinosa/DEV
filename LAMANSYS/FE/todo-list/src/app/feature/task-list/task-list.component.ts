@@ -1,6 +1,6 @@
-import { Component, Input, OnInit, inject } from '@angular/core';
-import { TaskItem } from 'src/app/model/task-item.model';
+import { Component, OnInit } from '@angular/core';
 import { TasksService } from 'src/app/services/tasks.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-task-list',
@@ -9,12 +9,13 @@ import { TasksService } from 'src/app/services/tasks.service';
 })
 export class TaskListComponent implements OnInit{   
 
-  constructor(public tasksService: TasksService) {
+  constructor(public tasksService: TasksService, private route: ActivatedRoute) {
     this.tasksService.getTaskList();
   }
 
   ngOnInit(): void {
     this.tasksService.getTaskList();
+    
   }
 
 }

@@ -4,8 +4,8 @@ export class TaskItem {
     description: string;
     isChecked: boolean = false;
 
-    constructor(id: number,title: string, description: string){
-        this.id = id;
+    constructor(title: string, description: string){
+        this.id = Date.now();
         this.title = title;
         this.description = description;
         this.isChecked = this.isChecked;

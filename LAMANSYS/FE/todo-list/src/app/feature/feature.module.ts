@@ -4,7 +4,7 @@ import { AddTaskComponent } from './add-task/add-task.component';
 import { TaskListComponent } from './task-list/task-list.component';
 import { TaskItemComponent } from './task-item/task-item.component';
 import { SharedModule } from '../shared/shared.module';
-
+import { RouterLink } from '@angular/router';
 
 
 @NgModule({
@@ -15,7 +15,8 @@ import { SharedModule } from '../shared/shared.module';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    RouterLink
   ],
   exports:[
     AddTaskComponent,
